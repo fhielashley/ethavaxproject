@@ -1,10 +1,21 @@
-Overview
-This Solidity program is a simple "Token" program that shows the practical steps to those new to Solidity and interested in understanding its basic syntax and functionality. It demonstrates the creation of a basic Ethereum token named "shibainu" with the abbreviation "shiba." The contract allows for the minting (creation) and burning (destruction) of tokens, while also keeping track of token balances for Ethereum addresses. The initial total supply of tokens is set to 0.
+## Overview
+This is a Solidity code for an example contract. Solidity is a programming language used for writing smart contracts on the Ethereum blockchain. The contract is named "ExampleContract" and it has a public variable called "value" of type uint256 (unsigned integer with 256 bits). An example contract's Solidity code is provided here. The Ethereum blockchain uses the computer language Solidity to create smart contracts.
+The contract is called "ExampleContract" and has a public variable named "value" that is of type uint256 (an unsigned integer with 256 bits).
 
-Getting Started
+This contract serves the following three purposes: 
+Set the value of the "value" variable using the setValue(uint256 newValue) function. It demands that the new value be greater than zero. The transaction will be reversed and the message "New value cannot be zero" will be displayed if the new value is zero.
+
+This function is a pure function, meaning it doesn't change any state variables, according to assertExample(uint256 a, uint256 b). The difference between the two uint256 parameters is returned. It checks for a condition that should never be false using the assert statement. The code will throw an error if the condition is false. 
+
+The function revertExample(uint256 a, uint256 b) is also pure. The difference between the two uint256 parameters is returned. To address circumstances that are anticipated to be false, it employs the revert statement. The transaction will be rolled back and the message "a must be greater than or equal to b" will be displayed if the condition a b is true.
+ 
+Set the value of the "value" variable using the setValue(uint256 newValue) function. It demands that the new value be greater than zero. The transaction will be reversed and the message "New value cannot be zero" will be displayed if the new value is zero.
+
+
+## Getting Started
 To run and interact with this program, you can use Remix, an online Solidity Integrated Development Environment (IDE). Here are the steps to get started:
 
-Execution Instructions
+## Execution Instructions
 Go to the Remix website at https://remix.ethereum.org/.
 
 Create a new file by clicking on the "+" icon in the left-hand sidebar.
@@ -15,18 +26,13 @@ Copy and paste the provided Solidity code in the link https://github.com/fhielas
 
 Compile the code by clicking on the "Solidity Compiler" tab in the left-hand sidebar. Ensure that the "Compiler" option is set to "0.8.18" (or another compatible version), and then click on the "Compile ethavax" button.
 
-Deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "ethavax" contract from the dropdown menu and click on the "Deploy" button.
+Interact with the smart contract: Once the smart contract is deployed, you can interact with it using a web3-enabled application or through the Remix IDE. You can call the functions setValue, assertExample, and revertExample with the required parameters.
+To set a new value, call the setValue function and provide a non-zero value as the parameter.
+To use the assertExample function, provide two uint256 values as parameters, and it will return the difference between them if the condition a >= b is true.
+To use the revertExample function, provide two uint256 values as parameters. If the condition a < b is true, it will revert the transaction and display the message "a must be greater than or equal to b".
 
-Interact with the contract by calling the 'mint' and 'burn' functions and reading the public variables (i.e., name, abbreviation, totalSupply, and balances of the token).
-
-To mint tokens: Click on the "ethavax" contract in the left-hand sidebar, and then click on the down caret icon on the "mint" function button to input the required variables. Finally, click on the "transact" button to execute the minting function with the specified amount of Kaizen tokens.
-
-To burn tokens: Repeat the process above for the 'burn' function.
-
-To read the balance of a specific Ethereum address: Paste the address into the text field of the address button and click on the balance button to retrieve the balance.
-
-Author
+## Author
 Fhiel Nanalig
 GitHub: @fhielashley
-License
+## License
 This project is licensed under the MIT License - see the LICENSE.md file for details.# ethavaxproject
