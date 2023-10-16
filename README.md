@@ -11,7 +11,7 @@ Create a new file by clicking on the "+" icon in the left-hand sidebar.
 
 Save the file with a .sol extension (e.g., ethavax.sol).
 
-Copy and paste the provided Solidity code in the link https://github.com/fhielashley/ethproofproject/blob/main/ethproof%20(1).sol and paste into the newly created file.
+Copy and paste the provided Solidity code in the link https://github.com/fhielashley/ethavaxproject/blob/main/ethavax.sol and paste into the newly created file.
 
 Compile the code by clicking on the "Solidity Compiler" tab in the left-hand sidebar. Ensure that the "Compiler" option is set to "0.8.18" (or another compatible version), and then click on the "Compile ethavax" button.
 
